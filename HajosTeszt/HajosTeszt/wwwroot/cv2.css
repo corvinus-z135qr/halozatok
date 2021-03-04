@@ -1,0 +1,105 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+#tarto {
+    background-color: lightblue;
+}
+
+#szoveg {
+    background-color: darkgreen;
+}
+
+#listak {
+    background-color: lightgreen;
+}
+
+#kep {
+    background-color: lightgrey;
+}
+
+div {
+    margin: 1px;
+    padding: 10px;
+    border: 1px solid green;
+    border-radius: 25px;
+}
+
+#tarto a {
+    text-decoration: none;
+    color: white;
+    flex: 1 1 auto;
+}
+
+body {
+    font-weight: bold;
+    text-align: left;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+a {
+    padding: 10px;
+    border-radius: 25px;
+    background-color: blue;
+    color: white;
+    text-align: center;
+}
+
+    a:hover {
+        background-color: fuchsia;
+    }
+
+span {
+    font-weight: bold;
+    font-style: italic;
+    color: green;
+    font-size: 40px;
+}
+
+.sorrendi {
+    font-style: italic;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
+.megisfeher {
+    background-color: white;
+}
+
+@media screen and (min-width: 800px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        max-width:1500px;
+        margin: auto;
+    }
+
+    #tarto {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    #szoveg {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        flex-wrap: wrap;
+    }
+
+    #listak {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    #kep {
+        justify-content: center;
+    }
+}
