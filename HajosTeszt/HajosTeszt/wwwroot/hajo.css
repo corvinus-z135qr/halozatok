@@ -8,7 +8,7 @@ html, body {
 
 div {
     margin: 10px;
-    border: 1px solid fuchsia;
+    border: 1px black;
 }
 
 #külső {
@@ -57,7 +57,6 @@ div {
 }
 
 .kattintható:hover {
-    background-color: lightblue;
     color: white;
 }
 
@@ -71,3 +70,10 @@ div {
 
 }
 
+.jó{
+    background:green !important;
+}
+
+.rossz{
+    background:red !important;
+}
