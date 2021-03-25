@@ -9,6 +9,7 @@ html, body {
 div {
     margin: 10px;
     border: 1px black;
+    background-color:lightgreen;
 }
 
 #külső {
@@ -76,4 +77,12 @@ div {
 
 .rossz{
     background:red !important;
+}
+
+#vissza{
+    background-color:lightblue;
+}
+
+#előre{
+    background-color: lightblue;
 }
