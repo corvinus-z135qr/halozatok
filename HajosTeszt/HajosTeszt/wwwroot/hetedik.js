@@ -8,6 +8,24 @@ var k = 0;
 var kérdések;
 var kérdéssorszám = 0;
 
+fetch('/questions/4')
+    .then(response => response.json())
+    .then(data => kérdésMegjelenítés(data)
+    );
+
+function kérdésBetöltés(id) {
+    fetch(`/questions/${id}`)
+        .then(response => {
+            if (!response.ok) {
+                console.error(`Hibás válasz: ${response.status}`)
+            }
+            else {
+                return response.json()
+            }
+        })
+        .then(data => kérdésMegjelenítés(data));
+}   
+
 function letöltés() {
 
     fetch('/questions.json')
