@@ -13,6 +13,7 @@ namespace HajosTeszt.Controllers
     [ApiController]
     public class CrudeController : ControllerBase
     {
+        //Minden elem listázása
         // GET: api/<CrudeController>
         [HttpGet]
         public IEnumerable<Instructor> Get()
@@ -34,7 +35,7 @@ namespace HajosTeszt.Controllers
             return keresettOktató;
 
         }
-
+        //Új rekord felvétele
         // POST api/<CrudeController>
         [HttpPost]
         public void Post([FromBody] Instructor ÚjOktató)
@@ -50,6 +51,7 @@ namespace HajosTeszt.Controllers
         {
         }
 
+        //Rekord törlése kulcs alapján
         // DELETE api/<CrudeController>/5
         [HttpDelete("{id}")]
         public void Delete(int id)
@@ -61,9 +63,9 @@ namespace HajosTeszt.Controllers
             context.Remove(törlendőOktató);
             context.SaveChanges();
         }
-
+        // Összes kérdés száma
         [HttpGet]
-        [Route("Instructor/count")]
+        [Route("instructor/count")]
         public int M4() //Tetszőleges metódusnév
         {
             StudiesContext context = new StudiesContext();
@@ -71,9 +73,9 @@ namespace HajosTeszt.Controllers
 
             return kérdésekSzáma;
         }
-
+        //Kérdések azonosító alapú lekérdezése
         [HttpGet]
-        [Route("Instructors/all")]
+        [Route("instructors/all")]
         public ActionResult M1()
         {
             StudiesContext context = new StudiesContext();
