@@ -34,10 +34,12 @@ namespace HajosTeszt
 
             app.UseRouting();
 
+            /* valamiért nem mûûködik
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
             });
+            */
         }
 
     }
